@@ -64,9 +64,11 @@ h3 {
     font-size: 30px;
     line-height: 35px;
     width: 30%;
-    
-    
- }
+}
+.p1 em {
+    background-color: #011638;
+    color:#EEF0F2
+}
 #imagemStomatopoda {
     position: absolute;
     width: 400px;
@@ -102,5 +104,23 @@ table,tr, th ,td {
     font-size: 30px;
     background-color: #011638;
     padding: 10px;
+    text-align: left;
 
+}
+.supervisao {
+    padding: 100px;
+    height: 500px;
+    background-color:#EEF0F2;
+    width: 100%;
+}
+.p2 {
+    display: inline-block;
+    background-color:#EEF0F2;
+    color:#011638;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 30px;
+    line-height: 35px;
+    width: 30%;
+    padding: 20px;
 }
