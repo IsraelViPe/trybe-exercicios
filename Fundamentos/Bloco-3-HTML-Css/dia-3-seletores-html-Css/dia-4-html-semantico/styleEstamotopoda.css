@@ -1,0 +1,12 @@
+*{
+    border: 0;
+    background-color: #EEF0F2;
+    color:#141414
+}
+.header {
+    font-size: xx-large;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 200px;
+}
