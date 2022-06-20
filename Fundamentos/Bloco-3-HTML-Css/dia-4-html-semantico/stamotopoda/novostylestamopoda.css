@@ -1,0 +1,205 @@
+/* tela */
+* {
+    background-color: #3d4477;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+article {
+    width: auto;
+    margin: auto;
+    display: inline-block;
+}
+
+section {
+    padding: 50px;
+    height: 400px;
+    background-color: #011638;
+    width: 60%;
+    display: inline-block;
+
+
+}
+
+aside {
+    padding: 50px;
+    height: 400px;
+    background-color: #011638;
+    width: 35%;
+    float: right;
+
+
+}
+
+/* barra de navegação */
+.navbar {
+
+    background-color: #EEC643;
+    height: 100px;
+    padding: 30px;
+    width: auto;
+
+}
+
+.navbar a {
+    display: flexbox;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    ;
+    padding: 10px;
+    background-color: #EEC643;
+    text-decoration: none;
+    color: #3d4477;
+
+}
+
+.navbar a:hover {
+    color: #0D21A1;
+}
+
+/* títulos e textos */
+
+h2 {
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 30px;
+}
+
+h3 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    width: 30%;
+    background-color: #011638;
+    color: #EEC643;
+    padding: 10px;
+
+}
+
+h4 {
+    background-color: #011638;
+    color: #EEC643;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: large;
+}
+
+.header {
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 150px;
+    padding: 40px;
+}
+
+.p {
+
+    background-color: #011638;
+    color: #EEC643;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 20px;
+    line-height: 35px;
+
+}
+
+.p em {
+    background-color: #011638;
+    color: #EEF0F2
+}
+
+/* imagens */
+#imagem1 {
+    border-radius: 50%;
+    border: 1px solid #EEC643;
+    width: 300px;
+    height: 250px;
+    background-color: #0D21A1;
+    padding: 8px;
+
+
+}
+
+/* tabela */
+table {
+
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #011638;
+    width: 250px;
+    height: 300px;
+
+}
+
+table caption {
+    color: #1930c9;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    background-color: #011638;
+
+
+}
+
+table,
+tr,
+th,
+td {
+    color: #1930c9;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 20px;
+    background-color: #011638;
+    padding: 5px;
+    text-align: left;
+
+}
+
+/* bibliografia */
+.bibliografia {
+    padding: 50px;
+    height: 200px;
+    background-color: #011638;
+    width: 98%;
+    display: block;
+
+}
+
+ul,
+li,
+a {
+    background-color: #011638;
+    list-style: none;
+    color: #EEF0F2;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+/* footer */
+.footer {
+    padding: 10px;
+    height: 50px;
+    background-color: #011638;
+    width: 98%;
+    display: block;
+}
+
+.footer p {
+    background-color: #011638;
+    list-style: none;
+    color: #EEF0F2;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+
+}
