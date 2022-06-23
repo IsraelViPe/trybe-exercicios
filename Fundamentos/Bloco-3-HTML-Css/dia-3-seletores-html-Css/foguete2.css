@@ -1,0 +1,42 @@
+
+body {
+    background-color:#F4F3EE ;
+    color: #463F3A;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ol {
+    background-color: #BCB8B1;
+    color:#463F3A ;
+     
+}
+
+.uppercase {
+    text-transform:uppercase ;
+    color: #F4F3EE;
+}
+.heading {
+    color: #463F3A;
+    font-size: 3em;
+}
+h1.heading {
+    font-size: 60px;
+    border: solid 1px #E0AFA0
+ }
+ li {
+    font-size: 30px;
+    line-height: 50px;
+}
+ol li em {
+    font-weight: bold;
+}
+.ulli3primeiras {
+    color: #463F3A ;
+}
+li:lang(java){
+    background-color: #E0AFA0 ;
+}
+ul li a:hover {
+    color:#463F3A;
+    font-weight: bolder;
+
+}
