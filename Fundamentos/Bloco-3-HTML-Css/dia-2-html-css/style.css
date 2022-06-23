@@ -1,0 +1,29 @@
+h1 { 
+    font-family: sans-serif;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color:darkgoldenrod
+
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-shadow: 5px 5px 20px palevioletred ;
+    color:seagreen
+}
+body {
+    font-size: 20px;
+    font-style:oblique;
+    line-height: 25px;
+    background-color: bisque;
+    }
+    #amarelo {
+        background-color: yellow;
+        color:black
+    }
+    #vermelho {
+        background-color: red;
+    }
+    #marron {
+        background-color: brown;
+    }
