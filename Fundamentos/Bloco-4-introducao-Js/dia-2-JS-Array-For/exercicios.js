@@ -30,14 +30,17 @@ if (mediaArit > 20) {
 
 // 5 
 
-// let numbers3 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers3 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-// let maior = [];
+let maior = [0];
 
 
-// for (let index = 0; index < numbers3.length; index += 1) {
-//     console.log (numbers3[index] + numbers3 )
-// } 
+for (let index = 0; index < numbers3.length; index += 1) {
+    if (numbers3[index] > maior) {
+        maior = numbers3[index]
+    }
+} 
+console.log (maior)
 
 // 6 
 let numbers4 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -57,17 +60,10 @@ if (numerosImpares.length > 0) {
 }
 
 // 7 
-// let numeroMenor = []
-// let numbers5 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-// for ( let index =0; index < numbers5.length; index += 1) {
-//     for ( let i =0; i < numbers5.length; index +=1) {
-//         if (numbers5[index] - numbers5[index] > 0) {
-//             numeroMenor.push(numbers5)
-//         }
-
-//     }
-// }
-
+let numeroMenor = []
+let numbers5 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+for ( let index =0; index < numbers5.length; index += 1) {
+    if ( numbers5[index])
 
 // 8 
 let umA25 = [];
