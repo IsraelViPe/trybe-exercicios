@@ -1,10 +1,12 @@
 // 1. Faça um algoritmo que calcule a soma de 35 a 105 usando a estrutura “for” e retorne no formato:
 // A soma de 35 a 105 é: X.
 // let array = [];
-// for ( let index = 35; index <= 105; index += 1) {
-//  array.push(index)
-// }
-// console.log(array);
+let soma = 0;
+for ( let index = 35; index <= 36; index += 1) {
+    soma += index
+
+}
+console.log(soma);
 // let soma = 0;
 // for (let index = 0; index < array.length; index += 1 ) {
 //     soma += array[index]
@@ -36,21 +38,21 @@
 //            console.log ("top secret")
 //        }
 
-let array = [];
-for ( let index = 15; index <= 155; index += 1) {
- array.push(index)
-}
-console.log(array)
-let numerosDiv3 = [];
-for ( let index = 0; index < array.length; index += 1) {
-    if ( array[index] % 3 === 0 && array[index] % 2 !== 0) {
-        numerosDiv3.push(array[index]);
-    }
-}
-console.log(numerosDiv3)
-if (numerosDiv3.length <= 50) {
-    console.log ("top secret")
-}
+// let array = [];
+// for ( let index = 15; index <= 155; index += 1) {
+//  array.push(index)
+// }
+// console.log(array)
+// let numerosDiv3 = [];
+// for ( let index = 0; index < array.length; index += 1) {
+//     if ( array[index] % 3 === 0 && array[index] % 2 !== 0) {
+//         numerosDiv3.push(array[index]);
+//     }
+// }
+// console.log(numerosDiv3)
+// if (numerosDiv3.length <= 50) {
+//     console.log ("top secret")
+// }
 
 
 // 3. Crie um algoritmo que simula o jogo “pedra, papel e tesoura” levando em consideração  que são apenas duas pessoas jogando e imprima o resultado no formato:
@@ -76,24 +78,24 @@ if (numerosDiv3.length <= 50) {
    
   
 // }
-let jogo = ['Pedra', 'Papel', 'Tesoura'];
-let jogador1 = jogo[Math.floor(Math.random() * 2)];
-let jogador2 = jogo[Math.floor(Math.random() * 2)];
+// let jogo = ['Pedra', 'Papel', 'Tesoura'];
+// let jogador1 = jogo[Math.floor(Math.random() * 2)];
+// let jogador2 = jogo[Math.floor(Math.random() * 2)];
 
-console.log (jogador1, jogador2);
-
-
+// console.log (jogador1, jogador2);
 
 
-const n = 9
 
-let result = 100;
 
-for ( let i =0; i <= n; i += 1){
-    result -= i 
-    console.log(i);
-}
-console.log (result);
+// const n = 9
+
+// let result = 100;
+
+// for ( let i =0; i <= n; i += 1){
+//     result -= i 
+//     console.log(i);
+// }
+// console.log (result);
 
 
 
