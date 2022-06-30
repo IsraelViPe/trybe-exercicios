@@ -8,8 +8,26 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
+// >>>>por que ela está recebendo a classe .tech
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+let adResponsiveLi = document.getElementsByTagName("li");
+adResponsiveLi.addEventListener("click", translate);
+
+function translate () {
+    adResponsiveLi = adResponsiveLi.
+}
+
+
+// fluxo de trabalho com do DOM e Script >>>>>
+// >>>>> primeiro eu recupero o elemento que quero trabalhar, atravé de uma variável
+// >>>>> depois eu adiciono uma função listener nessa variável.
+// >>>>> a função tem no mínimo o parametro de evento, mais um parametro com outra função
+// >>>>> essa outra função deve estar declarada no meu código. Ela será responsável por 
+//       executar alguma coisa quando o evento acontecer
+
+
+
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
