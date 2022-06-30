@@ -74,6 +74,9 @@ function resetText(event) {
   event.target.innerText = 'Opção reiniciada';
   // O event possui várias propriedades, porém a mais usada é o event.target,
   // que retorna o objeto que disparou o evento.
+
+  // atenção ISRAEL , PRESTA ATENÇÃO;;;;;; O EVENT.TARGET FUNCIONA COMO SE VOCÊ ESTIVESSE RECUPERANDO A VARIÁVEL QUE CONTEM O
+  // ELEMENTO EM QUE O EVENTO OCORRE. POR ISSO EU CONSIGO DAR ATRIBUTOS PARA O EVENT.TARGET, COMO EU FARIA COM UMA VARIAVEL
 }
 
 firstLi.addEventListener('dblclick', resetText);
