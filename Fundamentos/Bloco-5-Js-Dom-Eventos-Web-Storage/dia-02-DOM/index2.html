@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-        // exercicio 1
-      let recuperar = document.body;
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    // exercicio 1
+    let recuperar = document.body;
     let adicionar = document.createElement("h1")
     recuperar.appendChild(adicionar);
     adicionar.innerText = "Exercício 5.2 - JavaScript DOM"
@@ -69,16 +71,125 @@
     adicionar2.className = "main-content";
 
     // exercício 3 
-    let recuperar2 = document.getElementsByClassName("main-content" );
+    let recuperar2 = document.getElementsByClassName("main-content")[0];
     let adicionar3 = document.createElement("section");
     recuperar2.appendChild(adicionar3);
+    adicionar3.className = "center-content"
 
+    // exercicio 4 
+
+    let recuperar3 = document.getElementsByClassName("center-content")[0];
+    let adicionar4 = document.createElement("p");
+    recuperar3.appendChild(adicionar4);
+    adicionar4.innerText = "Algum texto aqui."
+
+    // exercicio 5
+    let adicionar5 = document.createElement("section");
+    recuperar2.appendChild(adicionar5);
+    adicionar5.className = "left-content"
+
+    // exercicio 6
+
+    let adicionar6 = document.createElement("section");
+    recuperar2.appendChild(adicionar6);
+    adicionar6.className = "right-content";
+
+    // exercício 7
+    // fluxo >>> cria imagem >> atribui link e classes > adiciona
+
+    let recuperar4 = document.getElementsByClassName("left-content")[0];
+    let adicionar7 = document.createElement("img");
+    adicionar7.className = 'small-image';
+    adicionar7.src = "https://picsum.photos/200";
+    recuperar4.appendChild(adicionar7);
+
+    // exercício 8 
     
-    
-    
-    
-    
-    
-    </script>
-  </body>
+    // fluxo >>> recupera local >> criar elemento pai  > adicionar elemento pai
+    // > cria array com elementos a serem adicionados > percorre array com o for > 
+    // >dentro do for cria as lis e 
+    // adiciona  com appendChild;
+   
+    let recuperar5 = document.getElementsByClassName("right-content")[0];
+    let adicionar8 = document.createElement("ul");
+    recuperar5.appendChild(adicionar8);
+    let arrayLis = ["um", "dois", "três", "quatro", "cinco", "seis", "sete",
+      "oito", "nove", "Dez"];
+    for (let i = 0; i < arrayLis.length; i+= 1) {
+      let liArray = document.createElement("li");
+      liArray.innerHTML = arrayLis[i];
+      adicionar8.appendChild(liArray)
+    }
+
+    // exercicio 9
+
+    for (let i = 1; i <=3; i +=1) {
+      let adicionar9 = document.createElement("h3");
+      i.innerHTML = adicionar9;
+      recuperar2.appendChild(adicionar9);
+    }
+
+    //// segunda parte//////////////////////////////
+
+    // exercicio 1 
+
+    let recuperaH1 = document.getElementsByTagName("h1")[0];
+    recuperaH1.className = "title";
+
+    // exercicio 2 
+
+    let recuperaH3 = document.getElementsByTagName("h3");
+    for (let i = 0; i < recuperaH3.length; i += 1) {
+      recuperaH3.className = "description"
+    }
+
+    // exercicio 3
+    // fluxo >> para remover assim como para adicionar eu preciso usar a variável pai
+    let removeSection = document.getElementsByClassName("left-content")[0];
+    recuperar2.removeChild(removeSection);
+
+
+    // exercicio 4
+    let mudaSection = document.getElementsByClassName("right-content")[0];
+    mudaSection.style.marginRigth='auto';
+
+    // exercicio 5
+
+    let sectionCente = document.getElementsByClassName('center-content')[0];
+    sectionCente.style.backgroundColor = "green";
+
+    // exercicio 6 
+    // fluxo >>>> preciso recuperar a lista que um HTMLcolection ou um array
+    //  >>> depois eu crio um for pra percorrer o array 
+    // >>> depois eu preciso de uma variável para recuperar oque 
+    // está dentro de cada index do meu array
+    // >> depois preciso de if pra comparar o valor contido na li com 
+    //  o valor que eu quero excluir 
+    // >>>( pra fazer isso eu preciso da regra innerText.includes("textoDoElemento"))
+    let removeLi = document.getElementsByTagName("li");
+    let removeUl = document.getElementsByTagName("ul")[0];
+    for ( let i = 0; i < removeLi.length; i += 1) {
+      let item = removeLi[i];
+      if ( item.innerText.includes("nove")) {
+        removeUl.removeChild(item)
+      }
+    }
+    removeUl.lastChild.remove()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
 </html>
