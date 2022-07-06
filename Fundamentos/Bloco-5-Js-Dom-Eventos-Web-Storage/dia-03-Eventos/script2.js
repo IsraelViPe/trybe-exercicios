@@ -31,11 +31,11 @@ for (let i = 0; i < decemberDaysList.length; i += 1) {
   const tagLiDays = document.createElement("li");
   tagLiDays.innerText = daysDezembro;
   
-  if (tagLiDays.innerText.includes("25")) {
-    tagLiDays.className = "day holiday friday";
-  } else if (tagLiDays.innerText.includes("24")||tagLiDays.innerText.includes("31")) {
+  if (tagLiDays.innerText === "25") {
+    tagLiDays.className = "day holiday friday"; 
+  } else if (tagLiDays.innerText==="24"||tagLiDays.innerText==="31") {
     tagLiDays.className = "day holiday";
-  } else if (tagLiDays.innerText.includes("4")||tagLiDays.innerText.includes("11")||tagLiDays.innerText.includes("18")) {
+  } else if (tagLiDays.innerText==="4"||tagLiDays.innerText==="11"||tagLiDays.innerText==="18") {
     tagLiDays.className ="day friday"
   } else {
     tagLiDays.className = "day";
@@ -104,5 +104,56 @@ backgroundHoliday ();
 const paiSextaButton = document.getElementsByClassName("buttons-container")[0];
 
 paiSextaButton.appendChild(criaButtons ("btn-friday","Sexta-feira"));
+
+// exercicio 5
+
+// OBS : NÃO CONSEGUI A LÓGICA INVERSA; NO GABARITO NÃO FUNCIONA,
+// NÃO ENTENDI  
+
+
+function alteraTextoSexta () {
+  let btnSexta = document.getElementById("btn-friday");
+  let sextaDay = document.getElementsByClassName("friday");
+  let novoTexto = "sextou";
+  btnSexta.addEventListener ('click', function () {
+    for (let i = 0; i < sextaDay.length; i += 1) {
+   sextaDay[i].innerText = novoTexto;
+    
+  
+  }
+   
+  });
+}
+
+alteraTextoSexta ();
+
+// exercicio 6
+
+// fluxo capturar a ul que contem as li s dos dias
+// criar função com parametro event
+// depois chamar esse parametro no addEventListener
+
+function mouseEmCima () { 
+let ulDias = document.getElementById("days"); 
+ulDias.addEventListener('mouseover', function(event) {
+  event.target.style.fontSize = '30px';
+  event.target.style.fontWeight = "200";
+} );
+}
+
+function mouseSai () {
+  let ulDias = document.getElementById("days"); 
+  ulDias.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = "20px";
+    event.target.style.fontWeight = "200";
+  })
+}
+
+ mouseEmCima();
+ mouseSai ();
+
+ 
+
+
 
 
