@@ -7,6 +7,7 @@ const submitButton = document.getElementById("submitButton");
 const inputName = document.getElementById("nameInput");
 const inputMail = document.getElementById("emailInput");
 const textAreaInput = document.getElementById("winer");
+const cederImg = document.getElementById('cederImg');
 function validDate() {
   if (
     inputName.value.length >= inputName.minLength &&
@@ -24,4 +25,20 @@ function validDate() {
   }
 }
 
-submitButton.addEventListener("click", validDate );
+// function validPicture () {
+//     if (cederImg.checked === false) {
+        
+//     }
+
+// }
+
+submitButton.addEventListener("click", function(event) {
+    
+    if (cederImg.checked === false) {
+        alert ("participação condicionada à liberação de direitos de imagem")
+        event.preventDefault();
+    } else {
+        validDate();
+    }
+
+} );
