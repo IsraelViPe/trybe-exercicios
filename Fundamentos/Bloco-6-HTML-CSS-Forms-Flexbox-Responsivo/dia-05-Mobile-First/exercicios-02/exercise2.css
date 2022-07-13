@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  @media screen and (max-width: 390px) {
+    *, *:before, *:after {
+        margin: 10px 5px;
+    }
+    body {
+        background-color: #DDD1C7;
+    }
+    .header-container{
+        display: flex;
+        background-color: #8DB580;
+    }
+    .nav {
+        display:none;
+    }
+    .header-container p {
+        font-size: 7vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-align: center;
+        color:#4B4A67;
+    }
+    .aside-one {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        background-color: #7E8987;
+    }
+     h2 {
+        font-size: 6vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-align: center;
+        color:#36355e;
+        cursor: pointer;
+    }
+    .none {
+        display: none;
+    }
+    ul li {
+        list-style: none;
+        font-size: large;
+        font-weight: bold;
+        font-style: oblique;
+        color:#36355e;
+    }
+     ul li:hover {
+        background-color: #4B4A67;
+        color: #C2CFB2;
+    }
+    .aside-two {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        background-color: #7E8987;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 5vw;
+        font-style:oblique ;
+    }
+    .main-content p {
+        font-size: large;
+        line-height: 25px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: #8DB580;
+        
+    }
+
+    }
+  
+
+
+
+
+
+
+  @media screen and (min-width: 391px) and ( max-width:768px) {
+    *, *:before, *:after {
+        margin: 10px 5px;
+    }
+    body {
+        background-color: #DDD1C7;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #8DB580;
+    }
+    .header-container p {
+        font-size: 7vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-align: center;
+        color:#4B4A67;
+    }
+
+    .ulFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #7E8987;
+        list-style: none;
+        font-size: larger;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .ulFlex li:hover {
+        color:#C2CFB2;
+    }
+    .main-conteiner {
+        display: flex;
+        flex-flow: column;
+    } 
+    .aside-conteiner {
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-between;
+        background-color: #C2CFB2;
+    }
+    h2 {
+        font-size: 4vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-align: center;
+        text-align: center;
+        color:#36355e;
+        
+    }
+    ul li {
+        list-style: none;
+        font-size: large;
+        font-weight: bold;
+        font-style: oblique;
+        color:#36355e;
+    }
+     ul li:hover {
+        background-color: #4B4A67;
+        color: #C2CFB2;
+  }   
+  h1 {
+    font-size: 5vw;
+    font-style:oblique 
+  }
+  article p {
+    margin: 10px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #8DB580;
+    
+}
+
+    
+    
+
+
+
+
+
+
+  
+  @media screen and (min-width: 769px ) { 
+    body {
+        background-color: blueviolet;
+    }
+    
+  }
+
+  /* Realize as seguintes tarefas:
+1 - Utilizando a abordagem mobile first e media queries, crie três versões de layout diferentes para essa página. Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande). Faça pelo menos um commit para cada layout;
+2 - Para fazer isso de forma adequada, você deve prestar atenção no conteúdo da página e pensar em como mostrá-lo em cada um dos tamanhos de tela:
+Onde a lista de capítulos deve estar posicionada?
+Como a história deve ser mostrada?
+Como o cabeçalho deve ser posicionado?
+O que fazer com as informações do autor em cada tamanho de tela?
+3 - Talvez você precise alterar o HTML um pouco, adicionando elementos para facilitar a estilização, ou talvez mudando um bloco de lugar dentro da página. */
