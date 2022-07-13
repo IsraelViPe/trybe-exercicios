@@ -166,20 +166,40 @@ html {
     background-color: #8DB580;
     
 }
+  }
 
-    
-    
-
-
-
-
-
-
-  
-  @media screen and (min-width: 769px ) { 
+ @media screen and (min-width: 769px ) { 
     body {
-        background-color: blueviolet;
+        background-color: #DDD1C7;
     }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #8DB580;
+    }
+    .header-container p {
+        font-size: 7vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        text-align: center;
+        color:#4B4A67;
+    }
+    .ulFlex {
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7E8987;
+        list-style: none;
+        font-size: larger;
+        font-weight: bolder;
+        cursor: pointer;
+
+    }
+    .ulFlex li:hover {
+        color:#C2CFB2;
+
     
   }
 
