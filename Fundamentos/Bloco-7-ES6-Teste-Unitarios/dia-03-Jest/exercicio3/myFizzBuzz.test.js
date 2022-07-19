@@ -14,4 +14,7 @@ describe("testes da função myfizzBuzz", () => {
   it("se o num for 2 o retorno deve ser 2 ", () => {
     expect(2).toBe(myFizzBuzz(2));
   });
+  it("se num for NaN o retorno deve ser false", () => {
+    expect(myFizzBuzz(NaN)).toBe("false"");
+  });
 });
