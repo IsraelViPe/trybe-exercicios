@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Trybe Trip</h1>
+        <h2>Concorra a uma viagem com tudo pago !!!</h2>
+    </header>
+    <main>
+        <form class="formStyle" action="" method="get">
+        <div class="formArea">
+            <label for="nameInput">Nome:</label>
+            <input type="text" name="nameInput" required maxlength="40" minlength="10" id="nameInput" />
+            <br />
+            <br />
+            <label for="emailInput">E-mail:</label>
+            <input type="email" name="emailInput" id="emailInput" maxlength="50" minlength="10" />
+            <br />
+            <br />
+            <fieldset id="destino">
+                <legend>Destino Preferido</legend>
+                <label for="mexico">México</label>
+                <input type="radio" name="destinoChoose" id="mexico" value="destinoMexico" />
+
+                <label for="japao">Japão</label>
+                <input type="radio" name="destinoChoose" id="japao" value="destinoJapao" />
+
+                <label for="tailandia">México</label>
+                <input type="radio" name="destinoChoose" id="tailandia" value="destinoTailandia" />
+
+                <label for="russia">México</label>
+                <input type="radio" name="destinoChoose" id="russia" value="destinoRussia" />
+                <br />
+                <br />
+                <br />
+            </fieldset>
+            <br>
+            <br>
+            <span>Eu quero muito essa viagem porque ...</span>
+            <br>
+            <br>
+            <textarea name="porqueDevoGanhar" id="winer" cols="60" rows="10" maxlength="500" placeholder="Seu texto aqui..."></textarea>
+            <br>
+            <br>
+            <label for="date">Escolha a melhor data para sua viagem:</label>
+            <input type="date" name="tripDate" id="date">
+            <br>
+            <br>
+            <label for="ofertas">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <input type="checkbox" name="receberOfertas" id="ofertas" value="queroReceber">
+            <br>
+            <br>
+            <label for="cederImg">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+                futuros.</label>
+            <input type="checkbox" name="cederImagens" id="cederImg" value="aceite-ok" checked>
+        </div>
+        <div class="buttonsDiv">
+            <button id="submitButton" class="buttons" type="submit" value="submit">Enviar</button>
+            <button class="buttons" type="reset" value="reset">Apagar</button>
+        </div>
+    </form>
+    </main>
+
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
