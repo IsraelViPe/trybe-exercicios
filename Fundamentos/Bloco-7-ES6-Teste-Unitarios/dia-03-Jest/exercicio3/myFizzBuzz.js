@@ -5,5 +5,15 @@ function myFizzBuzz(num) {
     if (num % 5 === 0) return 'buzz';
     return num;
   }
-  
-module.exports = myFizzBuzz;
+const sum = (a, b) => {
+  try {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+      throw new Error('Parameters should be of type number.');
+    }
+
+    return a + b;
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+module.exports = { myFizzBuzz, sum};
