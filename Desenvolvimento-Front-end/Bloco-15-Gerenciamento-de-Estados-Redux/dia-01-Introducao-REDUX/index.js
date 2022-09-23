@@ -27,4 +27,4 @@ const store = Redux.createStore(reducer);
 
 store.dispatch(fazerLogin("alguem@email.com")) // preciso da função dispatch para passar uma action para o store 
 
-console.log(store.getState())
+console.log(store.getState())       
