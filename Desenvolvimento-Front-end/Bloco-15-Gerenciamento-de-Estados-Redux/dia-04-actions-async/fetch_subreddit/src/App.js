@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import fetchAPIreddit from './service/redditAPI'
+import { fetchFrontendSubreddit, fetchReactJsSubreddit } from './service/redditAPI'
 
 export default class App extends Component {
   state = {
@@ -13,7 +13,8 @@ export default class App extends Component {
   }
   render() {
     const { selectedTheme } = this.state;
-    fetchAPIreddit(selectedTheme)
+    console.log(selectedTheme)
+    console.log(  fetchReactJsSubreddit())
     return (
       <div>
         <h1>Tema Selecionado : { selectedTheme } </h1>
