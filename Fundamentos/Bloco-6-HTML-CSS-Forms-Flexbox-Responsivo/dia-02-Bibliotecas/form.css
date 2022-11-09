@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    background-color:#F7F7F7 ;
+}
+header h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    color:#143109;
+}
+header h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+    color:#AAAE7F;
+}
+.formArea {
+    padding: 50px;
+    margin:50px auto;
+    width: 80%;
+    border: 5px solid #AAAE7F;
+    background-color: #EFEFEF;
+}
+
+.formStyle{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #143109;
+}
+
+#nameInput{
+    padding: 10px;
+    font-size: 20px;
+    color:#143109;
+}
+#emailInput {
+    padding: 10px;
+    font-size: 20px;
+    color:#143109;
+}
+
+#winer{
+    padding: 10px;
+    font-size: 20px;
+    color:#143109;
+    width: 80%;
+
+}
+#date {
+    padding: 10px;
+    font-size: 20px;
+    color:#143109;
+}
+
+
+.buttonsDiv {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    
+}
+.buttons {
+    padding: 10px;
+    margin:30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color:#F7F7F7 ;
+    font-size: larger;
+    font-weight: bolder;
+    color:#143109;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: #143109;
+    color:#AAAE7F;
+}
